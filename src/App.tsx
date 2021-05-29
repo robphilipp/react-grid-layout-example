@@ -10,7 +10,7 @@ import {
   useWindowDimensions,
   withFraction,
   withGridTrack, withPixels
-} from "react-resizeble-grid-layout";
+} from "react-resizable-grid-layout";
 
 function App() {
 
