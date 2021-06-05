@@ -9290,10 +9290,10 @@
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   "version" "0.8.3"
 
-"react-resizable-grid-layout@^0.1.5":
-  "integrity" "sha512-hUcOfh6IiDdFpnO70i596UbYRmfTk43tSD+DDVLsg7I93FRXl5F8wCMp6mPlDpz3AMFGfTPYGvCVth8+fn+1/g=="
-  "resolved" "https://registry.npmjs.org/react-resizable-grid-layout/-/react-resizable-grid-layout-0.1.5.tgz"
-  "version" "0.1.5"
+"react-resizable-grid-layout@^0.2.0":
+  "integrity" "sha512-7Yt/97IuOVtLiNqEN+jBn+M+4KRI94yINVFB5rtI+vRb1h2BtQ39vshJRXmdih3fSRjJ+5f8SxXyPE/v1lYXYQ=="
+  "resolved" "https://registry.npmjs.org/react-resizable-grid-layout/-/react-resizable-grid-layout-0.2.0.tgz"
+  "version" "0.2.0"
 
 "react-scripts@4.0.3":
   "integrity" "sha512-S5eO4vjUzUisvkIPB7jVsKtuH2HhWcASREYWHAQ1FP5HyCv3xgn+wpILAEWkmy+A+tTNbSZClhxjT3qz6g4L1A=="

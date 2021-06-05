@@ -3,7 +3,7 @@ import './App.css';
 import {
   Grid,
   gridArea,
-  GridCell,
+  GridItem,
   gridTemplateAreasBuilder,
   GridTrackTemplate,
   gridTrackTemplateBuilder, useGridCell,
@@ -49,42 +49,42 @@ function App() {
           columnGap={5}
           showGrid={false}
       >
-        <GridCell gridAreaName='header'>
+        <GridItem gridAreaName='header'>
           <CellContents/>
-        </GridCell>
-        <GridCell gridAreaName='sidebar'>
+        </GridItem>
+        <GridItem gridAreaName='sidebar'>
           <CellContents/>
-        </GridCell>
-        <GridCell gridAreaName='main'>
+        </GridItem>
+        <GridItem gridAreaName='main'>
           <Grid
               dimensionsSupplier={useGridCell}
               gridTemplateColumns={createNestedGridTemplateColumn(showLast)}
               columnGap={1}
               rowGap={1}
           >
-            <GridCell column={1} row={1}>
+            <GridItem column={1} row={1}>
               <CellContents/>
-            </GridCell>
-            <GridCell column={1} row={2}>
+            </GridItem>
+            <GridItem column={1} row={2}>
               <CellContents/>
-            </GridCell>
-            <GridCell column={3} row={3} isVisible={showLast}>
+            </GridItem>
+            <GridItem column={3} row={3} isVisible={showLast}>
               <CellContents showRemoveButton={true} onRemoveButtonClick={() => setShowLast(false)}/>
-            </GridCell>
-            <GridCell column={1} row={4}>
+            </GridItem>
+            <GridItem column={1} row={4}>
               <CellContents/>
-            </GridCell>
-            <GridCell column={2} row={1} rowsSpanned={4}>
+            </GridItem>
+            <GridItem column={2} row={1} rowsSpanned={4}>
               <CellContents/>
-            </GridCell>
+            </GridItem>
           </Grid>
-        </GridCell>
-        <GridCell gridAreaName='aside'>
+        </GridItem>
+        <GridItem gridAreaName='aside'>
           <CellContents/>
-        </GridCell>
-        <GridCell gridAreaName='footer'>
+        </GridItem>
+        <GridItem gridAreaName='footer'>
           <CellContents/>
-        </GridCell>
+        </GridItem>
       </Grid>
   )
   // return (
@@ -99,13 +99,13 @@ function App() {
   //         columnGap={5}
   //         showGrid={false}
   //     >
-  //         <GridCell row={1} column='nav'>
+  //         <GridItem row={1} column='nav'>
   //             <CellContents/>
-  //         </GridCell>
-  //         <GridCell row={1} column={2}>
+  //         </GridItem>
+  //         <GridItem row={1} column={2}>
   //             <CellContents/>
-  //         </GridCell>
-  //         <GridCell row={1} column={3} rowsSpanned={3}>
+  //         </GridItem>
+  //         <GridItem row={1} column={3} rowsSpanned={3}>
   //             <Grid
   //                 dimensionsSupplier={useGridCell}
   //                 gridTemplateColumns={gridTrackTemplateBuilder()
@@ -114,33 +114,33 @@ function App() {
   //                 columnGap={1}
   //                 rowGap={1}
   //             >
-  //                 <GridCell column={1} row={1}>
+  //                 <GridItem column={1} row={1}>
   //                     <CellContents/>
-  //                 </GridCell>
-  //                 <GridCell column={1} row={2}>
+  //                 </GridItem>
+  //                 <GridItem column={1} row={2}>
   //                     <CellContents/>
-  //                 </GridCell>
-  //                 <GridCell column={3} row={3}>
+  //                 </GridItem>
+  //                 <GridItem column={3} row={3}>
   //                     <CellContents/>
-  //                 </GridCell>
-  //                 <GridCell column={1} row={4}>
+  //                 </GridItem>
+  //                 <GridItem column={1} row={4}>
   //                     <CellContents/>
-  //                 </GridCell>
-  //                 <GridCell column={2} row={1} rowsSpanned={4}>
+  //                 </GridItem>
+  //                 <GridItem column={2} row={1} rowsSpanned={4}>
   //                     <CellContents/>
-  //                 </GridCell>
+  //                 </GridItem>
   //             </Grid>
   //             {/*<CellContents/>*/}
-  //         </GridCell>
-  //         <GridCell row={2} column='nav'>
+  //         </GridItem>
+  //         <GridItem row={2} column='nav'>
   //             <CellContents/>
-  //         </GridCell>
-  //         <GridCell row={2} column={2}>
+  //         </GridItem>
+  //         <GridItem row={2} column={2}>
   //             <CellContents/>
-  //         </GridCell>
-  //         <GridCell row={3} column='nav' columnsSpanned={2}>
+  //         </GridItem>
+  //         <GridItem row={3} column='nav' columnsSpanned={2}>
   //             <CellContents/>
-  //         </GridCell>
+  //         </GridItem>
   //     </Grid>
   // )
 }
